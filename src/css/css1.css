@@ -1,0 +1,9 @@
+.style1 {
+    color: red;
+}
+
+.style2 {
+    height: 500px;
+    width: auto;
+    background: url("../images/1.jpg") no-repeat;
+}

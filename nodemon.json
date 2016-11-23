@@ -1,0 +1,13 @@
+{
+  "execMap" : {
+    "js": "./bin/www"
+  },
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "ext": "js json",
+  "ignore" : [
+    "assets",
+    "config/webpack-assets.json"
+  ]
+}
