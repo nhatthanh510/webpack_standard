@@ -37,11 +37,17 @@ var config = {
                 ]
             },
             {
+                test: /\.html$/,
+                loader: "html-loader"
+            },
+            {
                 test: /\.(jpe?g|png|gif|svg)$/i,
-                loaders: [
-                    'url?limit=819200',
-                    'img'
-                ]
+                include : path.join(__dirname, 'src'),
+                loader  : 'url-loader?limit=30000&name=images/[name].[ext]'
+            },
+            {
+                test: /\.json$/,
+                loader: 'json'
             }
         ]
     }
